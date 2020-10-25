@@ -1,0 +1,326 @@
+a:hover {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'fzSeng';
+    src: url('../fonts/FZZJ-SengTJW.TTF');
+}
+
+@font-face {
+    font-family: "fzCoca";
+    src: url('../fonts/FZZJ-COCA.TTF');
+}
+
+#select {
+    z-index: 3;
+}
+
+.back-back {
+    background-color: #171717;
+}
+
+.back-yellow {
+    background-color: rgb(1, 80, 18);
+}
+
+.back-white {
+    background-color: rgb(233, 230, 230);
+}
+
+.back-gray {
+    background-color: #eeeeee;
+}
+
+.border-right {
+    border-right: 1px solid;
+}
+
+.border-top {
+    border-top: 1px black solid;
+}
+
+.border-bottom {
+    border-bottom: 1px black solid;
+}
+
+.border-left {
+    border-left: 1px black solid;
+}
+
+.border-10 {
+    border-radius: 10px;
+}
+
+.border-20 {
+    border-radius: 20px;
+}
+
+.border-red {
+    border: 1px red solid;
+}
+
+.border-white {
+    border-color: white;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-black {
+    border: 1px black solid;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-green {
+    color: rgb(0, 150, 0);
+}
+
+.color-white-a {
+    color: rgb(143, 138, 138);
+    text-decoration: none;
+}
+
+.color-white-a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.width-60 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.width-70 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.width-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-son {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.max-width {
+    width: 100%;
+}
+
+/* top */
+.margin-top-5 {
+    margin-top: 5%;
+}
+
+.margin-top-3 {
+    margin-top: 3%;
+}
+
+/* bottom */
+.margin-bottom-3 {
+    margin-bottom: 3%;
+}
+
+/* left */
+.margin-left-3 {
+    margin-left: 3%;
+}
+
+/* right */
+.margin-right-5 {
+    margin-right: 5%;
+}
+
+/* top and bottom */
+.margin-5 {
+    margin: 5% auto;
+}
+
+.margin-3 {
+    margin: 3% auto;
+}
+
+.margin-0 {
+    margin: 0 auto;
+}
+
+.section-son {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.masking-out {
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    position: absolute;
+}
+
+.imgdiv {
+    font-family: "fzHai";
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+}
+
+.bgn-green-yellow {
+    font-family: "fzHai";
+    color: white;
+    background-color: green;
+}
+
+.bgn-green-yellow:hover {
+    color: black;
+    background-color: rgb(224, 224, 5);
+}
+
+
+.div-have-image {
+    position: relative;
+}
+
+.start {
+    color: #fec348;
+}
+
+.nostart {
+    color: gray;
+}
+
+.display-init-hide {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.font-10 {
+    font-size: 10px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-fzSeng {
+    font-family: "fzSeng";
+}
+
+.font-fzCoca {
+    font-family: "fzCoca";
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-900 {
+    font-weight: 900;
+}
+
+.font-800 {
+    font-weight: 800;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-200 {
+    font-weight: 200;
+}
+
+.font-100 {
+    font-weight: 100;
+}
+
+.site {
+    border: 5px rgba(128, 128, 128, 0.459) dashed;
+}
+
+.site:hover {
+    border: 5px rgb(187, 8, 8) dashed;
+}
+
+.site-action {
+    border: 5px rgb(187, 8, 8) dashed;
+}
+
+.inline {
+    position: relative;
+}
+
+.float-right {
+    float: right;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.number-font {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 20px;
+    min-width: 20px;
+    display: block;
+    background: red;
+}
+
+.number {
+    display: block;
+    color: #FFFFFF;
+    text-align: center
+}
+
+.placeholder {
+    min-width: 100px;
+    width: 50%;
+    height: 100%;
+    background-color: #e6e6e6;
+}

@@ -19,9 +19,11 @@ def access():
                                    rep='http://',
                                    end_index=8)
         _method = _data['method']
-        _keys = _data['keys[]']
-        _values = _data['values[]']
+        _keys = _data['keys']
+        _values = _data['values']
         dis = {}
+        _keys = str(_keys).split(',')
+        _values = str(_values).split(',')
         if type(_keys) is list:
             for x, y in enumerate(_keys):
                 dis[y] = _values[x]

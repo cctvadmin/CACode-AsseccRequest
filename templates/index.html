@@ -12,118 +12,122 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">cacode</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">推荐 <span class="sr-only">(current)</span></a></li>
-                    <li>
-                        <a href="#fakelink">cacode open api</a>
-                    </li>
-                    <li>
-                        <a href="tutorial.html" target="_blank">使用教程</a>
-                    </li>
-                </ul>
-            </div>
+                <span class="sr-only">toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">cacode</a>
         </div>
-    </nav>
-    <div class="bg-sm margin-0 padding" pad="" pad-size="10px" bg-width="50%" sm-width="100%">
-        <div class="container">
-            <div class="padding border" pad="" pad-size="10px"
-                style="border: 1px rgba(161, 161, 161, 0.24) solid;margin-bottom: 30px;">
-                <div class="form-group has-feedback">
-                    <label class="control-label" for="password">放入链接</label>
-                    <input type="text" placeholder="链接放这里" class="form-control" id="link" />
-                </div>
-                <div class="form-group has-feedback">
-                    <label class="control-label" for="password">访问方式</label>
-                    <select class="form-control select select-primary select-block mbl" id="method">
-                        <option value="get">get</option>
-                        <option value="post">post</option>
-                    </select>
-                </div>
-                <div class="form-group has-feedback">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">携带数据</div>
-                        <div class="panel-body">
-                            <div id="data">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-                                        <div class="form-group">
-                                            <label for="inputkey" class="col-sm-2 control-label">key:</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" name="key" class="form-control inputkey" value=""
-                                                    required="required" pattern="" title="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-                                        <div class="form-group">
-                                            <label for="inputvalue" class="col-sm-2 control-label">value:</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" name="value" class="form-control inputvalue" value=""
-                                                    required="required" pattern="" title="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
-                                        <button class="btn btn-wide delete_line" onclick="delete_line(this)">
-                                            <span class="fui-cross"></span>
-                                            删除本行
-                                        </button>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">推荐 <span class="sr-only">(current)</span></a></li>
+                <li>
+                    <a href="#fakelink">cacode open api</a>
+                </li>
+                <li>
+                    <a href="tutorial.html" target="_blank">使用教程</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="bg-sm margin-0 padding" pad="" pad-size="10px" bg-width="50%" sm-width="100%">
+    <div class="container">
+        <div class="padding border" pad="" pad-size="10px"
+             style="border: 1px rgba(161, 161, 161, 0.24) solid;margin-bottom: 30px;">
+            <div class="form-group has-feedback">
+                <label class="control-label" for="password">放入链接</label>
+                <input type="text" placeholder="链接放这里" class="form-control" id="link"/>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="control-label" for="password">访问方式</label>
+                <select class="form-control select select-primary select-block mbl" id="method">
+                    <option value="get">get</option>
+                    <option value="post">post</option>
+                </select>
+            </div>
+            <div class="form-group has-feedback">
+                <div class="panel panel-default">
+                    <div class="panel-heading">携带数据</div>
+                    <div class="panel-body">
+                        <div id="data">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 margin-3">
-                                    <button class="btn btn-primary btn-wide " id="add_data">
-                                        <span class="fui-plus"></span>
-                                        增加键值对
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                    <div class="form-group">
+                                        <label for="inputkey" class="col-sm-2 control-label">key:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="key" class="form-control inputkey" value=""
+                                                   required="required" pattern="" title="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                    <div class="form-group">
+                                        <label for="inputvalue" class="col-sm-2 control-label">value:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="value" class="form-control inputvalue" value=""
+                                                   required="required" pattern="" title="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <button class="btn btn-wide delete_line" onclick="delete_line(this)">
+                                        <span class="fui-cross"></span>
+                                        删除本行
                                     </button>
                                 </div>
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 margin-3">
-                                    <button class="btn btn-wide" id="cancel">
-                                        <span class="fui-trash"></span>
-                                        清空键值对
-                                    </button>
-                                </div>
-                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 margin-3">
-                                    <button class="btn btn-primary btn-wide" id="send">
-                                        <span class="fui-twitter"></span>
-                                        发送请求
-                                    </button>
-                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 margin-3">
+                                <button class="btn btn-primary btn-wide " id="add_data">
+                                    <span class="fui-plus"></span>
+                                    增加键值对
+                                </button>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 margin-3">
+                                <button class="btn btn-wide" id="cancel">
+                                    <span class="fui-trash"></span>
+                                    清空键值对
+                                </button>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 margin-3">
+                                <button class="btn btn-primary btn-wide" id="send">
+                                    <span class="fui-twitter"></span>
+                                    发送请求
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    返回数据：
-                    <pre id="result">
+            </div>
+            <div>
+                <button class="btn btn-wide" onclick="document.getElementById('result').innerHTML=''">
+                    <span class="fui-trash"></span>
+                    清空
+                </button>
+                返回数据：
+                <pre id="result">
 public class main{
 
 }
 </pre>
-                </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    copyright ©2019-2025 cacode 粤icp备：20009502号
-                </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                copyright ©2019-2025 cacode 粤icp备：20009502号
             </div>
         </div>
     </div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>

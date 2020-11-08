@@ -14,8 +14,8 @@ def rep_prefix(string, prefix, rep, start_index=0, end_index=-1):
 
 
 def access(address, data, method):
-    if method == 'POST':
-        _result = requests.post(url=address, data=data)
+    if str(method).upper() == 'POST'.upper():
+        _result = requests.post(url=address, json=data)
     else:
         if address[-2:-1] == '/':
             address = address[0:-2]

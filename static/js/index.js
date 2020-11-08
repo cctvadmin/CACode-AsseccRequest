@@ -15,21 +15,25 @@ function delete_line(doc) {
 
 $('#send').click(function () {
     var link = $('#link').val()
-    var keys = []
-    var values = []
+    var keys = ''
+    var values = ''
     $('.inputkey').each(function () {
-        keys.push($(this).val() === "" ? "" : $(this).val())
-    })
+        let str = $(this).val() === "" ? "" : $(this).val()
+        keys += str
+        keys += ','
+    });
     $('.inputvalue').each(function () {
-        values.push($(this).val() === "" ? "" : $(this).val())
-    })
+        let str = $(this).val() === "" ? "" : $(this).val()
+        values += str
+        values += ','
+    });
     da = {
         "url": link,
         "method": $('#method').val(),
-        "keys": keys,
-        "values": values
-    }
+        "keys": keys.substr(0, keys.length - 1),
+        "values": values.substr(0, values.length - 1)
+    };
     $.get('/access', da, function (d) {
         $('#result').text(d)
-    })
+    });
 })
